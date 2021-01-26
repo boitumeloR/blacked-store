@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 
@@ -7,7 +8,7 @@ import {faWhatsapp} from '@fortawesome/free-brands-svg-icons';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })
-export class LandingPageComponent implements OnInit {
+export class LandingPageComponent implements OnInit, AfterViewInit {
 
   faWhatsapp = faWhatsapp;
   faInstagram = faInstagram;
@@ -242,9 +243,38 @@ export class LandingPageComponent implements OnInit {
       imagePath: 'assets/images/card-images/JDIWhite.jpeg'
     },
   ]
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Blacked Store | Home')
   }
 
+  ngAfterViewInit(): void {
+    this.observeNav();
+  }
+
+
+  observeNav() {
+    const header = document.querySelector('.sticky');
+    const intro = document.querySelector('.landing');
+
+    const sectionOneObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          console.log('Im intersecting');
+          header.classList.add('nav-white');
+        } else {
+          console.log('im not');
+          header.classList.remove('nav-white');
+        }
+      });
+    }, { rootMargin: '-100px 0px 0px 0px'});
+
+    sectionOneObserver.observe(intro);
+  }
+
+  Scroll($element: HTMLElement) {
+    console.log($element);
+    $element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+  }
 }

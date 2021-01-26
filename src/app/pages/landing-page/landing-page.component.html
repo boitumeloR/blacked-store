@@ -1,23 +1,22 @@
 <div class="landing">
     <img src="assets/images/air-force(1).png" class="sneaker" alt="Nike Air Force One">
     <main class="main">
-        <nav>
+        <nav class="sticky">
             <div class="logo">
                 BLACKED
             </div>
             <div class="button">
-                <a>View Products</a>
+                <a (click)="Scroll(target)">View Products</a>
             </div>
         </nav>
-
         <h1 class="welcome">
             Welcome to your friendly neighborhood drip dealer. 
         </h1>
-        <a class="explore">Explore</a>
+        <a class="explore" (click)="Scroll(target)">Explore</a>
     </main>
 </div>
 
-<h1 class="product-heading">
+<h1 class="product-heading" #target>
     Featured Items
 </h1>
 <div class="products">
@@ -37,6 +36,23 @@
     </div>
 </div>
 
+<footer>
+    <div class="foot-logo">
+        BLACKED &trade;
+    </div>
+    <div class="socials">
+        <a href="https://wa.me/27682464051" class="foot-social" target="_blank">
+            <fa-icon [icon]="faWhatsapp" class="my-float"></fa-icon>
+        </a>
+        <a href="https://www.instagram.com/bla_ckedstore/?hl=en" class="foot-social" target="_blank">
+            <fa-icon [icon]="faInstagram" class="my-float"></fa-icon>
+        </a>
+    </div>
+
+    <div class="year">
+        2021
+    </div> 
+</footer>
 <a href="https://wa.me/27682464051" class="whatsapp" target="_blank">
     <fa-icon [icon]="faWhatsapp" class="my-float"></fa-icon>
 </a>
