@@ -14,7 +14,7 @@ $space-grey: #363636;
     overflow-y: hidden;
 
     .sneaker {
-        z-index: 999;
+        z-index: 10;
         width: 550px;
         position: absolute;
         top: 40%;
@@ -226,6 +226,12 @@ $space-grey: #363636;
     z-index:100;
 }
 
-.my-float{
-	margin-top:16px;
+.whatsapp {
+    padding-top: 12px;
+    z-index: 999;
+}
+
+.ig {
+    padding-top: 12px;
+    z-index: 999;
 }
