@@ -139,6 +139,108 @@ export class LandingPageComponent implements OnInit {
       price: 1600,
       imagePath: 'assets/images/card-images/AJ1TyeDye.jpg'
     },
+    {
+      name: 'Nike Air Dior Jordan One',
+      color: 'Grey',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AirDior.jpg'
+    },
+    {
+      name: 'Nike 270 React',
+      color: 'Multi Colored',
+      price: 1400,
+      imagePath: 'assets/images/card-images/270React.jpeg'
+    },
+    {
+      name: 'Nike Zoom 2K',
+      color: 'B & W',
+      price: 1400,
+      imagePath: 'assets/images/card-images/zoom-2K.jpg'
+    },
+    {
+      name: 'Nike Zoom 2K',
+      color: 'Purple',
+      price: 1400,
+      imagePath: 'assets/images/card-images/zoom-2K-purp.jpeg'
+    },
+    {
+      name: 'Puma Cali',
+      color: 'White',
+      price: 1300,
+      imagePath: 'assets/images/card-images/puma-cali-white.jpg'
+    },
+    {
+      name: 'Puma Cali',
+      color: 'B & W',
+      price: 1300,
+      imagePath: 'assets/images/card-images/puma-cali-bw.jpeg'
+    },
+    {
+      name: 'Puma RS-X',
+      color: 'Toys Jacklemkus',
+      price: 1300,
+      imagePath: 'assets/images/card-images/RSX.jpg'
+    },
+    {
+      name: 'Adidas YEEZY Slides',
+      color: 'Assorted',
+      price: 1300,
+      imagePath: 'assets/images/card-images/yeezy.jpeg'
+    },
+    {
+      name: 'Air Jordan 4 Retro ',
+      color: 'Black Cat',
+      price: 1600,
+      imagePath: 'assets/images/card-images/retro-black-cat.jpeg'
+    },
+    {
+      name: 'Air Jordan 4',
+      color: 'Bred',
+      price: 1600,
+      imagePath: 'assets/images/card-images/retro-bred.jpg'
+    },
+    {
+      name: 'Air Jordan OFF White',
+      color: 'Brown',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AJOFFBrown.jpg'
+    },
+    {
+      name: 'Nike VapourMax Plus',
+      color: 'Black',
+      price: 1400,
+      imagePath: 'assets/images/card-images/vmplus.jpg'
+    },
+    {
+      name: 'Nike Air Max 97',
+      color: 'White',
+      price: 1400,
+      imagePath: 'assets/images/card-images/97white.jpg'
+    },
+    {
+      name: 'Nike Air Max 97',
+      color: 'Yellow',
+      price: 1400,
+      imagePath: 'assets/images/card-images/97yellow.jpg'
+    },
+    {
+      name: 'Nike Air Max 97',
+      color: 'Black',
+      price: 1400,
+      imagePath: 'assets/images/card-images/97Black.jpg'
+    },
+    {
+      name: 'Nike Air Max 97',
+      color: 'Yellow',
+      price: 1400,
+      imagePath: 'assets/images/card-images/ISPA.jpg'
+    },
+    {
+      name: 'Nike Just Do It',
+      color: 'White',
+      price: 900,
+      imagePath: 'assets/images/card-images/JDIWhite.jpeg'
+    },
   ]
   constructor() { }
 
