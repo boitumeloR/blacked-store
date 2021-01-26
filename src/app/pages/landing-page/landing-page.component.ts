@@ -84,7 +84,61 @@ export class LandingPageComponent implements OnInit {
       color: 'New York',
       price: 1300,
       imagePath: 'assets/images/card-images/A1NY.jpeg'
-    }
+    },
+    {
+      name: 'Nike Air Force One 07 LV8',
+      color: 'Chicago',
+      price: 1500,
+      imagePath: 'assets/images/card-images/A1Chicago.png'
+    },
+    {
+      name: 'Nike Air Jordan One Retro',
+      color: 'University Blue',
+      price: 1500,
+      imagePath: 'assets/images/card-images/AJ1Uni.jpg'
+    },
+    {
+      name: 'Nike Air Jordan One Retro',
+      color: 'Black & White',
+      price: 1500,
+      imagePath: 'assets/images/card-images/AJ1BW.jpeg'
+    },
+    {
+      name: 'Nike Air Jordan One Retro',
+      color: 'Orange',
+      price: 1500,
+      imagePath: 'assets/images/card-images/AJ1Orange.jpg'
+    },
+    {
+      name: 'Nike Air Jordan One Retro',
+      color: 'Red',
+      price: 1500,
+      imagePath: 'assets/images/card-images/AJ1Red.png'
+    },
+    {
+      name: 'Nike Air Jordan One Retro',
+      color: 'Smoke Grey',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AJ1SmokeGrey.jpg'
+    },
+    {
+      name: 'Nike Air Jordan One High',
+      color: 'Pink Quartz (GS)',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AJ1MidPink.png'
+    },
+    {
+      name: 'Nike Air Jordan One High',
+      color: 'Digital Pink',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AJ1DigitalPink.png'
+    },
+    {
+      name: 'Nike Air Jordan One',
+      color: 'Tie Dye',
+      price: 1600,
+      imagePath: 'assets/images/card-images/AJ1TyeDye.jpg'
+    },
   ]
   constructor() { }
 
