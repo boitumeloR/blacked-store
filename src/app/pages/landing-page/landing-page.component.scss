@@ -42,7 +42,6 @@ $space-grey: #363636;
         background: linear-gradient(320deg, rgba(232,232,232,1) 0%, rgba(130,130,130,1) 0%, rgba(54,54,54,1) 15%);
         clip-path: polygon(50% 0%, 100% 0, 100% 63%, 0 93%, 0 0);
         z-index: -1100;
-
         .welcome {
             color: #eee;
             margin: 3% 5%;
@@ -93,10 +92,10 @@ $space-grey: #363636;
                 font-weight: 500;
                 margin-left: 5%;
                 margin-bottom: 50px;
+                margin-top: 70px;
             }
         }
 
-        .explore {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
         .explore {
             cursor: pointer;
             border: none;
@@ -106,8 +105,9 @@ $space-grey: #363636;
             text-transform: uppercase;
             transition: 0.5s;
             background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 10px -3px #eee;
+            color: $space-grey;
+            background: rgba(255, 255, 255, 0.562);            
+            box-shadow: 0 0 7px -3px #eee;
             border-radius: 10px;
          }
     
@@ -171,7 +171,6 @@ $space-grey: #363636;
             width: 100%;
             height: 6%;
         }
-            .button {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
             .button {
                 cursor: pointer;
                 border: none;
@@ -182,8 +181,9 @@ $space-grey: #363636;
                 text-transform: uppercase;
                 transition: 0.5s;
                 background-size: 200% auto;
-                color: white;            
-                box-shadow: 0 0 10px -3px #eee;
+                color: $space-grey;
+                background: rgba(255, 255, 255, 0.562);             
+                box-shadow: 0 0 7px -3px #eee;
                 border-radius: 10px;
                 display: block;
 
@@ -367,10 +367,26 @@ footer {
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 414px) {
+        height: 30%;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 30%;
+    }
     .foot-logo {
         margin-left: 5px;
-        font-size: 40px;
+        font-size: 30px;
+        margin-bottom: 10px;
         color: rgba(255, 255, 255, 0.822);
+
+        @media screen and (max-width: 414px) {
+            font-size: 20px;
+        }
+    
+        @media screen and (max-width: 375px) {
+            font-size: 20px;
+        }
     }
 
     .year {
@@ -387,7 +403,7 @@ footer {
         .foot-social {
             width:50px;
             height:50px;
-            margin-left: 5px;
+            margin: 5px;
             background-color:#979797;
             color:#FFF;
             border-radius:10px;

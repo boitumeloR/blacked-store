@@ -237,8 +237,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
       imagePath: 'assets/images/card-images/ISPA.jpg'
     },
     {
-      name: 'Nike Just Do It',
-      color: 'White',
+      name: 'Nike Air Max 720 ISPA',
+      color: 'Black',
       price: 900,
       imagePath: 'assets/images/card-images/JDIWhite.jpeg'
     },
